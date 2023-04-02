@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Exercise 04</title>
+</head>
+<body>
+    <h1>Laboratory 02</h1>
+    <h2>Exercise 04</h2>
+    <div class="home">
+        <a href="index.html">Home</a>
+    </div>
+    <h2>GRADE POINT AVERAGE</h2>
+    <p>Note 1: <input type="text" id="n1"></p>
+    <p>Note 2: <input type="text" id="n2"></p>
+    <p>Note 3: <input type="text" id="n3"></p>
+    <p><input type="button" value="Calculate" onclick="calculateAverage()"></p>
+    <p id="average"></p>
+    <h2>Congratulations on your performance!</h2>
+</body>
+<script type="text/javascript">
+    function calculateAverage(){
+        var N1 = document.getElementById("n1").value;
+        var N2 = document.getElementById("n2").value;
+        var N3 = document.getElementById("n3").value;
+        var pro = (parseFloat(N1)+parseFloat(N2)+parseFloat(N3))/3;
+        document.getElementById("average").innerHTML = pro.toFixed(2);
+
+        if(pro >= 4)
+        alert('REGULAR')
+        else
+        alert('REPROVED')
+    }
+</script>
+</html>

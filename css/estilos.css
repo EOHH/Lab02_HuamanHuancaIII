@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(150, 237, 64);
+}
+
+h1{
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+}
+.navbar-nav{
+    font-size: 2em;
+    background-color: rgb(239, 239, 64);
+    color: rgb(1, 1, 200);
+}
+.home{
+    background-color: rgb(240, 246, 84);
+    text-align: center;
+    font-size: 2em;
+    width: 10%;
+}
+a:link {
+    text-decoration: none;
+  }
+h2{
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+    color: rgb(238, 22, 22);
+}
+.footer {
+    padding: 300px;
+  }
+
+.result{
+    font-size: 2em;
+    width: 200px;
+}
